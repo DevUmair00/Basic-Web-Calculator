@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+         }
+         body{
+            background-color: #060649;
+            height: 100vh;
+            width: 100%;
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+         }
+         .options
+         {
+            visibility: hidden;
+         }
+         #btn{
+            padding: 10px;
+            font-size: medium;
+            font-weight: 600;
+         }
+         .button-list{
+            margin-top: 30px ;
+         }
+         .sub-btn{
+            padding: 5px;
+            margin: 5px;
+         }
+    </style>
+</head>
+<body>
+    <h1>My Calculator.</h1>
+    <button type="button" id="btn">Calculate Something</button>
+
+    <section class="options"> 
+        <h1>Select an Operation</h1>
+        <div class="button-list" >
+            <button class="sub-btn" id="add">Addition</button>
+            <button class="sub-btn" id="sub">Subtraction</button>
+            <button class="sub-btn" id="mul">Multiplication</button>
+            <button class="sub-btn" id="division">Division</button>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
